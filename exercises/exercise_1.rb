@@ -6,7 +6,6 @@ puts "----------"
 
 # Your code goes below here ...
 
-
 burnaby = Store.create(name: "Burnaby", annual_revenue: 300000, womens_apparel: true, mens_apparel: true)
 richmond = Store.create(name: "Richmond", annual_revenue: 1260000, womens_apparel: true, mens_apparel: false)
 gastown = Store.create(name: "Gastown", annual_revenue: 300000, womens_apparel: false, mens_apparel: true)
