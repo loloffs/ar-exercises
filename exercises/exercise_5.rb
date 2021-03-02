@@ -8,3 +8,12 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+
+total_revenue = Store.sum(:annual_revenue)
+avg_revenue_per_store = Store.sum(:annual_revenue) / Store.count
+
+puts "The total revenue for the entire company is $#{total_revenue}."
+puts "The average revenue per store annually is $#{avg_revenue_per_store}."
+
+@good_stores = Store.where(annual_revenue: 1000000..1000000000)
+puts "#{@good_stores.length} store(s) are generating at least $1M annually."
